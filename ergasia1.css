@@ -1,0 +1,296 @@
+[class*="grid"]{
+    width: 100%;
+    height: 300vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: min-content min-content auto min-content;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "aside main"
+    "footer footer";
+}
+
+@media only screen and (max-width:600px) {
+    [class="grid"]{
+        width: 600px;
+    }
+}
+
+header,
+nav,
+aside,
+main,
+
+footer {
+    grid-area: footer;
+    border: 1px solid black;
+    background-color: rgb(244, 231, 231);
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: aside;
+}
+
+main {
+    grid-area: main;
+}
+
+nav {
+    grid-area: nav;
+    float: center;
+    height: calc(15vh - 60px);
+}
+
+.float {
+    float: auto;
+    border: 1px solid black;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    font-size: 19px;
+}
+
+#biografia{  /*message, περιεχει info_b, awards_, incident_b*/
+    font-size: 26px;
+    margin-bottom: 30px;
+    text-align: left;
+    position: absolute;
+}
+
+#erga{  /*message, περιεχει myth, dihghmata, paramythia*/
+    font-size: 26px;
+    margin-bottom: 30px;
+    text-align: left;
+    position: absolute;
+}
+
+#fotografies{  /*message, περιεχει foto1, foto2, foto3*/
+    font-size: 26px;
+    margin-bottom: 30px;
+    text-align: left;
+    position: absolute;
+}
+
+#diaxeirish{  /*message, περιεχει login ...*/
+    font-size: 26px;
+    margin-bottom: 30px;
+    text-align: left;
+    position: absolute;
+}
+
+#sundesmoi{  /*message, περιεχει link*/
+    font-size: 26px;
+    margin-bottom: 30px;
+    text-align: left;
+    position: absolute;
+}
+
+#bio_b{ /*button ΒΙΟΓΡΑΦΙΑ*/
+    border: 2px solid #040404;
+    text-align: center;
+    padding: 2px 20px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#works_b{ /*button ΕΡΓΑ*/
+    border: 2px solid #040404;
+    text-align: center;
+    padding: 2px 20px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#foto_b{ /*button ΦΩΤΟΓΡΑΦΙΕΣ*/
+    border: 2px solid #040404;
+    text-align: center;
+    padding: 2px 2px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#links_b{ /*button ΣΥΝΔΕΣΜΟΙ*/
+    border: 2px solid #040404;
+    text-align: center;
+    padding: 2px 2px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#managment_b{ /*button ΔΙΑΧΕΙΡΙΣΗ*/
+    border: 2px solid #040404;
+    text-align: center;
+    padding: 2px 2px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#plirofories{/*message ΠΛΗΡΟΦΟΡΙΕΣ*/
+    position: absolute;
+}
+
+#vraveia{/*message ΔΙΑΚΡΙΣΕΙΣ ΚΑΙ ΒΡΑΒΕΙΑ*/
+    position: absolute;
+}
+
+#sumvan{/*message ΣΥΜΒΑΝ*/
+    position: absolute;
+}
+
+#muthistorimata{/*message ΜΥΘΙΣΤΟΡΗΜΑΤΑ*/
+    position: absolute;
+}
+
+#dih{/*message ΔΙΗΓΗΜΑΤΑ*/
+    position: absolute;
+}
+
+#para{/*message ΠΑΡΑΜΥΘΙΑ*/
+    position: absolute;
+}
+
+#fotografia1{/*message ΦΩΤΟ 1*/
+    position: absolute;
+}
+
+#fotografia2{/*message ΦΩΤΟ 2*/
+    position: absolute;
+}
+
+#fotografia3{/*message ΦΩΤΟ 3*/
+    position: absolute;
+}
+
+#sun{/*message ΣΥΝΔΕΣΜΟΙ*/
+    position: absolute;
+}
+
+#log{/*message ΣΥΝΔΕΣΗ*/
+    position: absolute;
+}
+
+#info_b{ /*button ΠΛΗΡΟΦΟΡΙΕΣ*/
+    border: 2px solid #040404;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+#awards_b{ /*button ΔΙΑΚΡΙΣΕΙΣ ΚΑΙ ΒΡΑΒΕΙΑ*/
+    border: 2px solid #040404;
+    text-align: center;
+    padding: 5px 3px;
+    font-size: 11px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+#incident_b{ /*button ΣΥΜΒΑΝ*/
+    border: 2px solid #040404;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+#myth{ /*button ΜΥΘΙΣΤΟΡΗΜΑΤΑ*/
+    border: 2px solid #040404;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+#dihghmata{ /*button ΔΙΗΓΗΜΑΤΑ*/
+    border: 2px solid #040404;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+#paramythia{ /*button ΠΑΡΑΜΥΘΙΑ*/
+    border: 2px solid #040404;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+#foto1{ /*button ΦΩΤΟ 1*/
+    border: 2px solid #040404;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+#foto2{ /*button ΦΩΤΟ 2*/
+    border: 2px solid #040404;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+#foto3{ /*button ΦΩΤΟ 3*/
+    border: 2px solid #040404;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+#link{ /*button ΣΥΝΔΕΣΜΟΙ*/
+    border: 2px solid #040404;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+#login{ /*button ΣΥΝΔΕΣΗ*/
+    border: 2px solid #040404;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+}
+
+.flex img{
+    align-items: center;
+    max-width: 100%;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+ 
